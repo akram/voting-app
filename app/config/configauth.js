@@ -9,7 +9,7 @@ module.exports= {
     'name': 'QuickPoll',
     'clientID': '661759976298-mamu3igf6n3hsc3uapur0eq4cl06j5pa.apps.googleusercontent.com',
     'secret': 'Vg3AQ0cSGNAJausFmrZf_RVU',
-    'callbackURL': 'http://127.0.0.1:8080/auth/google/callback',
+    'callbackURL': ( process.env.URL || 'http://vote-akram-vote.caas-nonprod-sandbox.intra.groupama.fr ' ) + '/auth/google/callback',
     'passReqToCallback'   : true
   },
   "githubauth":{
